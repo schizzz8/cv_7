@@ -1,0 +1,208 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{multicol}
+
+\usepackage{fontawesome}
+%\faGithub\href{https://github.com/}{name} 
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Federico} % Your first name
+\familyname{Nardi} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+%\address{123 Broadway}{City, State 12345}
+%\mobile{(000) 111 1111}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{fenardi87@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+\extrainfo{\faGithub\href{https://github.com/}{schizzz8}}% <===============
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education and Work Experience}
+
+\cventry{2019--now}{Senior Autonomous Navigation Engineer}{\textsc{Pal Robotics}}{Barcelona}{}{Role: C++ Developer of Navigation Algorithms (Visual Navigation, 2D Localization, Odometry Calibration). Project Technical Lead of Robots for Intra-Logistics.}
+
+\cventry{2014--2019}{Ph.D. in Engineering in Computer Science}{\textsc{Sapienza University of Rome}}{}{\newline Research topics: Surface Reconstruction, SLAM, Semantic Mapping}{} 
+
+\cventry{2011--2014}{Master of Science in Artificial Intelligence and Robotics}{\textsc{Sapienza University of Rome}}{}{109/110}{Thesis: Evaluation of the most suitable representation for geometric differential operators \\ Advisor: Prof Fiora Pirri.}
+
+\cventry{2006--2011}{Bachelor's Degree in Computer Engineering}{\textsc{University of Naples Federico II}}{}{107/110}{Thesis: Ricostruzione tridimensionale di scene e oggetti raster \\ Advisor: Prof Antonio Picariello.}
+
+\cventry{2011}{Work Intern}{\textsc{Associazione Culturale Campi Flegrei}}{Naples}{}{Position: Tutor of Computer Science Fundamentals for motivated adult people, Computer Technician
+	and Informatic Consultant.}
+
+\cventry{2008}{Research Intern}{\textsc{Institut f{\"u}r Technische Informatik}}{St{\"u}ttgart}{}{Topics: C++ practice for electronic devices simulation, Linux fundamentals and Bash scripting.}
+
+
+
+\section{PhD Thesis}
+
+\cvitem{Title}{\emph{High-Level Environment Representations for Mobile Robots.}}
+\cvitem{Supervisors}{Prof Giorgio Grisetti \& Prof Daniele Nardi}
+\cvitem{Description}{The thesis focuses on the problem of building high-level representations of the environment that allow mobile robots to autonomously complete complex tasks.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills and Practical Experience}
+
+\subsection{Computing and Robotics}
+\cvitem{}{
+\begin{itemize}
+	\item Professional knowledge of programming languages: C, C++, Matlab/Octave, Java, Python, Bash.
+	\item Professional knowledge of Robotics libraries and tools: ROS, Eigen, OpenCV, PCL, Gazebo, OpenGL, CUDA.
+	\item Daily use of Control Version Software: Git.
+	\item Proved experience with IDEs and productivity applications: QtCreator, Netbeans, \LaTeX, Microsoft Office, LibreOffice.
+\end{itemize}
+}
+
+\subsection{University Projects}
+\cvitem{Computer Graphics}{Development of an OpneGL+GLUT app to animate a digital hand through the P5-Glove.}
+\cvitem{Machine Learning}{C++ integration of a 3D Object Recognition method based on Correspondence Grouping with the 3D Generalized Hough Transform.}
+\cvitem{Autonomous \& Mobile Robotics}{Implementation in ROS of a Velocity Estimation method based on the Continuous Homography for UAVs.}
+\cvitem{Computer Vision}{C++ implementation of the Level-Set method for Implicit Surface Reconstruction.}
+
+\subsection{International Events}
+
+\cventry{2019}{International Conference on Robotics And Automation}{IEEE RAS}{Montreal}{}{Description: Poster Presentation.}
+
+\cventry{2017}{European Robotic League Service Robots (ERL)}{Rockin@Home}{Peccioli (PI)}{}{Task: 2D Navigation.}
+
+\subsection{International Projects}
+
+\cventry{2015}{European Project, TRADR}{Long-term human-robot teaming for robot assisted
+	disaster response}{EU FP7 ICT 609763}{}{Task: Surface Reconstruction.}
+
+\subsection{Summer Schools}
+
+\cventry{2015}{TRADR Summer School on Autonomous Micro Aerial Vehicles}{Fraunhofer
+	IAIS}{Bonn}{}{Topics: Autonomous Navigation for Drones.}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Italian}{Mothertongue}{}
+\cvitemwithcomment{English}{C1}{}
+\cvitemwithcomment{Spanish}{B2}{}
+
+\section{Teaching}
+
+\cvitem{2017}{\textbf{Lecturer}, Fourth Lucia PhD School on "Artificial Intelligence and Robotics", \textit{Instituto Superior Tecnico}, Lisbon.}
+
+\cvitem{2016}{\textbf{Teaching Assistant}, "Artificial Intelligence I", \textit{Sapienza University of Rome}.}
+
+\cvitem{2016}{\textbf{Tutor}, "Seminars in AI", \textit{Sapienza University of Rome}.}
+
+\section{References}
+
+\renewcommand{\listitemsymbol}{} % Changes the symbol used for lists
+ 
+ \begin{multicols}{2}
+ 	\subsection{Prof Giorgio Grisetti} \cvitem{}{Department of Computer, Control \& \newline Management Engineering - \newline \textit{Sapienza University of Rome} \newline Via Ariosto 25 \newline 00185 Rome, Italy \newline \textit{grisetti@diag.uniroma1.it}}
+ 	
+ 	
+ 	\subsection{Prof Daniele Nardi } \cvitem{}{Department of Computer, Control \& \newline Management Engineering - \newline \textit{Sapienza University of Rome} \newline Via Ariosto 25 \newline 00185 Rome, Italy \newline \textit{nardi@diag.uniroma1.it}}
+ \end{multicols}
+
+\section{Publications}
+
+\cvitem{[2019]}{Irvin Aloise, Bartolomeo Della Corte, \underline{Federico Nardi} and Giorgio Grisetti. "Systematic Handling of Heterogeneous Geometric Primitives in Graph-SLAM Optimization". \textit{IEEE Robotics and Automation Letters} (RA- L).}
+
+\cvitem{[2019]}{\underline{Federico Nardi}, Bartolomeo Della Corte and Giorgio Grisetti. "Unified Representation and Registration of Heterogeneous Sets of Geometric Primitives". \textit{IEEE Robotics and Automation Letters} (RA- L).}
+
+\cvitem{[2018]}{\underline{Federico Nardi}, Maria T Lazaro, Luca Iocchi and Giorgio Grisetti. "Generation of laser-quality 2D navigation maps from RGB-D sensors". \textit{RoboCup Symposium}.}
+
+\cvitem{[2018]}{\underline{Federico Nardi}, Bartolomeo Della Corte and Giorgio Grisetti. "Unified Representation	of Heterogeneous Sets of Geometric Primitives". \textit{International Conference on Robotics And Automation (ICRA) Workshop on Perception, Inference, and Learning for Joint Semantic, Geometric, and Physical Understanding}.}
+
+\cvitem{[2016]}{Mario Gianni, \underline{Federico Nardi}, Federico Ferri, Filippo Cantucci, Manuel A. Ruiz
+	Garcia, Kartik Pushparaj and Fiora Pirri. "MIOM:A MIxed-Initiative Operational
+	Model in Urban Search and Rescue". \textit{International Conference on Control,
+		Automation and Robotics} (ICCAR).}
+	
+\cvitem{[2015]}{Valsamis Ntouskos, Marta Sanzari, Bruno Cafaro, \underline{Federico Nardi}, Fabrizio Natola, Fiora Pirri and Manuel Ruiz. "Component-Wise Modeling of Articulated Objects".
+	\textit{International Conference on Computer Vision} (ICCV).}
+
+\cvitem{[2015]}{Marta Sanzari, Fabrizio Natola, \underline{Federico Nardi}, Valsamis Ntouskos, Mahmoud Qudseya and Fiora Pirri. "Rigid tool affordance matching points of regard". \textit{International Conference on Intelligent Robots and Systems (IROS) Workshop on "Learning object affordances: a fundamental step to allow prediction, planning and tool use?"}.}
+
+\end{document}
